@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Document Root:root
+-->
+<xsd:schema xmlns:xsd = "http://www.w3.org/200l/XMLSchema">
+    <xsd:element name = "root">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element minOccurs="O" name="row" type="rowType"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:complexType name="rowType">
+        <xsd:sequence>
+            <xsd:element ref="StudID"/>
+            <xsd:element ref="Name"/>
+            <xsd:element ref="SSN"/>
+            <xsd:element ref="Emai1Address"/>
+            <xsd:element ref="HomePhone"/>
+            <xsd:element ref="HomeAddress"/>
+            <xsd:element ref="LocalAddress"/>
+            <xsd:element ref="EmergencyContact"/>
+            <xsd:element ref="ProgramID"/>
+            <xsd:element ref="PaymentID"/>
+            <xsd:element ref="AcademicStatus"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="StudID" type="xsd:string"/>
+    <xsd:element name="Name" type="xsd:string"/>
+    <xsd:element name="SSN" type="xsd:string"/> 
+    <xsd:element name="EmailAddress" type="xsd:string"/>
+    <xsd:element name="HomePhone" type="xsd:string"/>
+    <xsd:element name="HomeAddress" type="xsd:string"/>
+    <xsd:element name="LocalAddress" type="xsd:string"/>
+    <xsd:element name="EmergencyContact"type="xsd:string"/>
+    <xsd:element name="ProgramID" type="xsd:string"/>
+    <xsd:element name="PaymentID" type="xsd:string"/>
+    <xsd:element name="AcademicStatus" type="xsd:string"/>
+</xsd:schema>
+
